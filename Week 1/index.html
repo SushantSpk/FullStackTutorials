@@ -1,11 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Simple Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+  <!-- Header and navigation -->
+  <header>
+    <div class="container">
+      <h1>My Portfolio</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#academics">Academics</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#work">Work Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- About section -->
+    <section id="about">
+      <h2>About</h2>
+      <p>Hello! I am a beginner learning web development. This is portfolio page with basic information about me.</p>
+      <div id="image"><img src="images/Portfolio.png" alt="Portfolio Photo"></div>
+    </section>
+
+    <!-- Academics section -->
+    <section id="academics">
+      <h2>Academics</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Degree</th>
+            <th>Institution</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>School</td>
+            <td>Manakamana Sec. School</td>
+            <td>2019</td>
+          </tr>
+          <tr>
+            <td>High School</td>
+            <td>Morgan Int. College</td>
+            <td>2021</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+   
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <p>I enjoy reading, learning to code, taking photos, and going for short hikes. I like trying small projects to practice HTML and CSS.</p>
+    </section>
+
+
+    <section id="work">
+      <h2>Work Experience</h2>
+      <table class="small">
+        <thead>
+          <tr>
+            <th>Role</th>
+            <th>Company</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Intern</td>
+            <td>Company A</td>
+            <td>2022</td>
+          </tr>
+          <tr>
+            <td>Junior Developer</td>
+            <td>Company B</td>
+            <td>2023</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+
+      <div class="contact-details">
+        <h3>Contact Details</h3>
+        <p>Email: email@example.com</p>
+        <p>Phone: +984000000</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Sushant Sapkota</p>
+    </div>
+  </footer>
 
 </body>
 </html>
